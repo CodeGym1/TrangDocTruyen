@@ -1,0 +1,473 @@
+
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+body{
+    font-family: Arial, Tahoma;
+    font-size: 12px;
+    background-color: #EEEEEE;
+}
+.main{
+    width: 75%;
+    margin: auto;
+    padding: 0;
+    background-color: #EEEEEE;
+}
+.logo{
+    height: 120px; width: 60%;padding:25px 100px ;
+}
+
+#header{
+    height: 120px;
+    width: 100%;
+    background-color: skyblue;
+    border: 1px solid #CDCDCD;
+
+}
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.menu li:hover {
+    background-color: #0099cc;
+}
+#input{
+    width: 200px;
+    height: 37px;
+    padding: 5px;
+}
+form{
+    text-align: center;
+    float: right;
+    padding-top: 2px;
+
+}
+
+#navbar {
+    background-color:blue;
+    height: 42px;
+    border: 1px solid #CDCDCD;
+    width: 100%;
+
+
+}
+#navbar ul{
+    list-style-type: none;
+
+}
+#navbar, #navbar ul, #navbar li{
+    padding:0;
+    margin:0;
+}
+#navbar ul li{
+    position: relative;
+    float: left;
+    width: 160px;
+    height: 40px;
+    background-color: blue;
+    border-right: 1px solid white;
+    line-height: 40px;
+    text-align: center;
+
+}
+#navbar ul li a{
+    font-family: Tahoma;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+#navbar ul li:hover{
+    background-color: skyblue;
+}
+#navbar ul li:hover a{
+    color: black;
+}
+#menucon{
+    position: absolute;
+    display: none;
+}
+#navbar ul li:hover #menucon{
+    display: block;
+}
+.content{
+    width: 100%;
+    min-height: 500px;
+    background-color: #ffffff;
+    margin-top: 10px;
+}
+.tieudeTruyen{
+    width: 80%;
+    height: 200px;
+  margin: auto;
+    border: 1px solid #EEEEEE;
+
+}
+.noidungTruyen{
+    min-height: 200px;
+    padding: 10px;
+    font-family: Arial, Tahoma;
+    font-size: 15px;
+}
+.TruyenHot{
+    min-height: 200px;
+    width: 95%;
+    border: 1px solid #EEEEEE;
+    margin: auto;
+}
+.BinhLuan{
+    width: 100%;
+    min-height: 200px;
+    background-color:#ffffff;
+    border: 1px solid #CDCDCD;
+    margin-top: 10px;
+}
+#footer{
+    height: 100px;
+    width: 100%;
+    clear: both;
+    border: 1px solid #CDCDCD;
+    background-color: burlywood;
+    margin-top: 10px;
+
+}
+.footer-text{
+    width: 75%;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    margin:auto;
+
+}
+.footer-text a{
+    color: white;
+    font-size: 15px;
+    font-family: Tahoma;
+    text-align: center;
+}
+.tieudeTruyen h1 a{
+    text-align: center;
+    text-decoration: none;
+}
+.tacgia{
+    font-size: 14px;
+    color: #CDCDCD;
+    display: block;
+
+}
+.tenChuong{
+    font-size: 18px;
+    color: blue;
+    display: block;
+    padding-bottom: 10px;
+
+}
+.tieudeTruyen{
+    text-align: center;
+}
+.truyenHotNho{
+    width: 32.5%;
+    height: 50px;
+    border: 1px solid #EEEEEE;
+    display: inline-block;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.truyenHotNho a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Tahoma;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+}
+.truyenHotNho a:hover{
+    color: blue;
+}
+@media screen and (max-width:1024px){
+    #navbar{
+        height: 42px;
+        width: 100%;
+        padding: 15px;
+    }
+    #navbar, #navbar ul, #navbar li{
+        padding:0;
+        margin:0;
+    }
+    #navbar ul li{
+        position: relative;
+        float: left;
+        width: 130px;
+        height: 40px;
+        background-color: blue;
+        border-right: 1px solid white;
+        line-height: 40px;
+        text-align: center;
+        display: inline-block;
+
+    }
+    .truyenHotNho{
+        width: 32%;
+        text-align: left;
+        padding-left: 10px;
+    }
+    .truyenHotNho a{
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Tahoma;
+        font-size: 13px;
+        text-align: center;
+        line-height: 50px;
+    }
+    #header{
+        width: 100%;
+    }
+
+
+}
+@media screen and (max-width:768px){
+    #navbar{
+        height: 42px;
+        width: 100%;
+        padding: 15px;
+    }
+    #navbar, #navbar ul, #navbar li{
+        padding:0;
+        margin:0;
+    }
+    #navbar ul li{
+        position: relative;
+        float: left;
+        width: 120px;
+        height: 40px;
+        background-color: blue;
+        border-right: 1px solid white;
+        line-height: 40px;
+        text-align: center;
+        display: inline-block;
+
+    }
+    #input{
+        width: 160px;
+        height: 37px;
+    }
+    .form{
+        text-align: center;
+        float: right;
+
+    }
+    .truyenHotNho{
+        width: 48%;
+        height: 50px;
+        border: 1px solid #EEEEEE;
+        display: inline-block;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+        text-overflow: ellipsis;
+    }
+
+    .truyenHotNho a{
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Tahoma;
+        font-size: 13px;
+        text-align: center;
+
+    }
+    #header{
+        width: 100%;
+    }
+
+
+}
+@media screen and (max-width:425px){
+
+    #navbar, #navbar ul, #navbar li{
+        padding:0;
+        margin:0;
+    }
+    .logo{
+        width: 50%;
+        height: 100px;
+    }
+    #navbar ul li{
+        position: relative;
+        float: left;
+        width: 33%;
+        height: 40px;
+        background-color: blue;
+        border-right: 1px solid white;
+        line-height: 40px;
+        text-align: center;
+        display: inline-block;
+
+    }
+    #navbar #menucon li{
+        width: 150px;
+    }
+    .logo{
+        height: 100px;
+        width: 120px;
+        margin:10px 10px 10px;
+    }
+
+    .logo img {
+        height: 100px;
+        width: 120px;
+        margin:10px 10px  ;
+    }
+
+    #input{
+        display: none;
+
+    }
+    form{
+        display: none;
+    }
+    .truyenHotNho{
+        width: 97%;
+        height: 50px;
+        border: 1px solid #EEEEEE;
+        display: inline-block;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+        text-overflow: ellipsis;
+    }
+
+    .truyenHotNho a{
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Tahoma;
+        font-size: 13px;
+        text-align: center;
+
+    }
+    .tentruyen{
+
+    }
+    #header{
+        height: 120px;
+        width: 100%;
+        background-color: skyblue;
+        border: 1px solid #CDCDCD;
+    }
+    #footer{
+        width: 100%;
+        height: 150px;
+    }
+    .main{
+        width: 100%;
+    }
+
+
+
+}
+@media screen and (max-width:375px){
+    .main{
+        width: 100%;
+    }
+    #navbar, #navbar ul, #navbar li{
+        padding:0;
+        margin:0;
+    }
+    #navbar ul li{
+        position: relative;
+        float: left;
+        width: 33%;
+        height: 40px;
+        background-color: blue;
+        border-right: 1px solid white;
+        line-height: 40px;
+        text-align: center;
+        display: inline-block;
+        font-size: 10px;
+
+    }
+    #navbar #menucon li{
+        width: 130px;
+    }
+
+
+    #input{
+        display: none;
+
+    }
+    form{
+        display: none;
+    }
+    .truyenHotNho{
+        width: 97%;
+        height: 50px;
+        border: 1px solid #EEEEEE;
+        display: inline-block;
+        margin-left: 5px;
+        margin-bottom: 5px;
+        text-align: left;
+        text-overflow: ellipsis;
+    }
+    .tieudeTruyen{
+        width: 80%;
+        height: 250px;
+        margin: auto;
+        padding-top: 20px;
+        border: 1px solid #EEEEEE;
+    }
+    .truyenHotNho a{
+        text-decoration: none;
+        color: black;
+        font-family: Arial, Tahoma;
+        font-size: 13px;
+        text-align: center;
+
+    }
+    #header{
+        width: 100%;
+        height: auto;
+    }
+    #footer{
+        width: 100%;
+        height: 150px;
+    }
+    .logo{
+        height: 70px; width: 100px;padding:25px 50px ;
+    }
+
+
+}

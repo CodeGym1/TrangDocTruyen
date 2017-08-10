@@ -1,0 +1,75 @@
+if (typeof(_admguid) == "undefined") {
+var _admguid = ADM_AdsTracking.get("__uid");
+}
+var __adnZone40900chk=false;
+var adnZone_40900Data =
+{  "type": "7k",
+"size": "300x600",
+"adn": true,
+"is_db": 0,
+"ext":{"logo":"0"},
+"df": [],
+"lst": [{"isk":0,"pr":"8187892074","link":"http:\/\/herewego.kenh14.vn\/","title":"300x600_HWG","type":"iframe","tablet":0,"cpa":1,"src_exp":"","info":"0","height":600,"cocode":81333896,"src":"<script>(function(){var doc=document;var wd=300;var hg=600;var url='\/\/adi.admicro.vn\/adt\/banners\/nam2015\/4043\/min_html5\/anhnguyendoanle\/2017_08_07\/300x600HWGe2\/300x600HWGe2\/300x600HWGe2.html?url='+encodeURIComponent(admGetUrlCk()+encodeURIComponent(__admLink));doc.write('<ifr'+'ame src=\"'+url+'&admid='+admid+'\" width=\"'+wd+'\" height=\"'+hg+'\" frameborder=\"0\" scrolling=\"no\"><\/ifr'+'ame>');})();<\/script>","link3rd":"","sex":"","l":"1,2,3","is_default":0,"r":42,"src_bk":"\/\/adi.admicro.vn\/adt\/adn\/2017\/08\/300x6-adx598a720d2f917.jpg","isview":"1","width":300,"src_bk1":"","bid":81584,"link_views":"","age":"","cid":24714},{"isk":0,"pr":"8110355233","link":"https:\/\/nemo.vn\/dien-thoai-nhat?utm_source=admarket&utm_medium=adx&utm_campaign=dtnhat","title":"DT NHAT v3_300 x 600","type":"jpg","tablet":0,"cpa":1,"src_exp":"","info":"0","height":600,"cocode":1840574836,"src":"\/\/adi.admicro.vn\/adt\/adn\/2017\/08\/dtnha-adx598012c493aed.jpg","link3rd":"","sex":"","l":"1,2,3","is_default":0,"r":24,"src_bk":"","isview":"1","width":300,"src_bk1":"","bid":80824,"link_views":"","age":"2,3,4,5","cid":24522},{"isk":0,"pr":"7732925323","link":"http:\/\/adsgame.soha.vn\/service\/service\/track?utm_campaign=sg148-dongta&utm_source=adxpc-t6&redirected=https%3A%2F%2Fdongtataydoc.vn%2Flanding","title":"300x600_1","type":"iframe","tablet":0,"cpa":1,"src_exp":"","info":"0","height":600,"cocode":467879251,"src":"<script>(function(){var doc=document,url=admGetUrlCk()+encodeURIComponent(__admLink),ua=navigator.userAgent+'';var videourl='\/\/adi.admicro.vn\/adt\/banners\/nam2015\/4043\/SG148-Update-T7\/300x600.html';var imageurl='\/\/adi.admicro.vn\/adt\/banners\/nam2015\/4043\/SG148-Update-T7\/SG148_300x600.jpg';var imgwidth=300;var imgheight=600;var html='<div style=\"position:relative;\">'; if(ua.indexOf('Firefox')!=-1 || ua.indexOf('Android')!=-1 || ua.indexOf('iPad')!=-1 || ua.indexOf('iPhone')!=-1){html+=('<img src=\"'+imageurl+'\" border=\"0\" \/><a href=\"'+url+'\" target=\"_blank\" style=\"position:absolute; top:0; left:0; width:'+imgwidth+'px; height:'+imgheight+'px; display:block;z-index:9999;\"><span><\/span><\/a>')}else{html+=('<iframe src=\"'+videourl+'?url='+(encodeURIComponent(url))+'&admid='+admid+'\" width=\"'+imgwidth+'\" frameborder=\"0\" scrolling=\"no\" height=\"'+imgheight+'\" ><\/iframe>')}html+='<\/div>';doc.write(html);})();<\/script>","link3rd":"","sex":"","l":"1,2,3","is_default":0,"r":19,"src_bk":"\/\/adi.admicro.vn\/adt\/adn\/2017\/06\/sg148-adx59702a8783e68.jpg","isview":"2","width":300,"src_bk1":"","bid":77050,"link_views":"","age":"","cid":23683},{"isk":0,"pr":"8010844901","link":"http:\/\/popeyes.vn\/promotions.html?utm_source=Adnetwork&utm_medium=M&utm_campaign=muatang1","title":"300x600","type":"jpg","tablet":0,"cpa":1,"src_exp":"","info":"0","height":600,"cocode":392579309,"src":"\/\/adi.admicro.vn\/adt\/adn\/2017\/07\/300x6-adx596d8ef053b3a.jpg","link3rd":"","sex":"","l":"1,2,3","is_default":0,"r":13,"src_bk":"","isview":"1","width":300,"src_bk1":"","bid":79824,"link_views":"","age":"","cid":24301}]
+}
+function _adnzone40900FnRun(){
+var _admTkReferrer = document.referrer + '';
+var __admi=ADS_CHECKER.getQuery('i');
+if (typeof(window['__dmtb40900']) != undefined && window['__dmtb40900'] != null && typeof(window['__dmtb40900']) == 'object' && typeof(window['__dmtb40900']) == 'object' && window['__dmtb40900'].length >= 1 && typeof(window['__dmtb40900'][0])=='object') {
+/*adnZone_40900Data["lst"] = window["__dmtb40900"];*/
+var arr=[],arrbanid=[];
+for(var i=0,len=window["__dmtb40900"].length;i<len;i++){
+window["__dmtb40900"][i].r=parseInt(window["__dmtb40900"][i].r)+100;
+arr.push(window["__dmtb40900"][i]);
+arrbanid[i]=window["__dmtb40900"][i].bid;
+}
+var arrDataMain=adnZone_40900Data.lst;
+for(var i =0,len=arrDataMain.length;i<len;i++){
+if(!ADS_CHECKER.in_array(arrDataMain[i].bid,arrbanid)){
+arrbanid.push(arrDataMain[i].bid);
+arr.push(arrDataMain[i]);
+}
+}
+adnZone_40900Data["lst"] = arr;
+/*window["__dmtb40900"]=[0,1];*/
+}
+if(typeof(window['__dmtb40900'])!='undefined' && window['__dmtb40900'][0]==-19){
+AdmLoadDefault('adnzone_40900');
+return false;
+}
+window.adnzone40900 = new cpmzone(40900);
+window.adnzone40900.show(adnZone_40900Data);
+
+
+}
+if (typeof(ADM_AdsTracking) != "undefined" && typeof(_admloadJs) != "undefined") {
+(function(){
+var sp=ADS_CHECKER.getQuery('sp');
+var i=ADS_CHECKER.getQuery('i');
+var chk=false;
+if(sp=='adx'){
+var zidchk=(document.URL+'').split('#');
+if(zidchk.length>1){
+var zidstr=zidchk[1].replace('_'+i,'');
+chk=(zidstr==40900)?true:false;
+}
+}
+if(chk){
+var strurl="//pson.logging.admicro.vn/dmtb?h=" + _admguid + "&u="+encodeURIComponent(document.URL)+"&p=adxtracking&zid=40900&loc=" + ADS_City+"&bs="+i;
+}else{
+var strurl="//pson.logging.admicro.vn/dmtb?h=" + _admguid + "&u="+encodeURIComponent(document.URL)+"&p=adx&zid=40900&loc=" + ADS_City;
+}
+_admloadJs(strurl,function(){
+if(__adnZone40900chk===false){
+__adnZone40900chk=true;
+_adnzone40900FnRun();
+}
+});
+})();
+
+}
+window.setTimeout(function() {
+if(__adnZone40900chk===false){
+__adnZone40900chk=true;
+_adnzone40900FnRun();
+}
+}, 1000);

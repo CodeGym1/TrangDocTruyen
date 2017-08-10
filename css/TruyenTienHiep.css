@@ -1,0 +1,122 @@
+
+body{
+    background-color:  #EEEEEE;
+    font-family: Arial, Tahoma;
+}
+.main{
+    width: 80%;
+    padding: 0;
+    margin:auto;
+    background-color: #ffffff;
+}
+
+.logo{
+    height: 120px; width: 40%;padding:25px 50px ;
+}
+form{
+    text-align: center;
+    float: right;
+    padding-top: 5px;
+}
+#input{
+    width: 200px;
+    height: 35px;
+    padding: 5px;
+}
+#menucon{
+    position: absolute;
+    display: none;
+    text-decoration: none;
+}
+.anhto{
+    width: 100%;
+    height: 220px;
+    padding-top: 20px;
+
+}
+.anhnho{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 40px;
+
+
+}
+#head{
+
+    height: 120px;
+    width: 100%;
+    background-color: skyblue;
+    border: 1px solid #CDCDCD;
+
+}
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+
+.row.content {
+    height: 100%;
+}
+
+
+.sidenav{
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+
+footer {
+    background-color: burlywood;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    margin: 0px;
+}
+.footer-text{
+    width: 90%;
+    height: auto;
+    text-align: center;
+    padding-top: 10px;
+    margin:auto;
+
+}
+.footer-text a {
+    color: white;
+    font-size: 15px;
+    font-family: Tahoma;
+}
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+}
+.list{
+    text-align: left;
+}
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {height:auto;}
+}
+@media screen and (max-width: 425px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {height:auto;}
+    #head{
+        display: none;
+
+    }
+}
